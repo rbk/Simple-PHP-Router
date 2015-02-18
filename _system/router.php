@@ -78,7 +78,7 @@ class Router {
             }
             if (!self::$ctrl && !isset($redirect) && substr(URI_PATH, -1) !== '/')
             {
-                $redirect = URI_PATH.'/';
+                $redirect = URI_PATH . '/';
                 if (strlen(URI_PARAM))
                 {
                     $redirect .= '?'.URI_PARAM;
